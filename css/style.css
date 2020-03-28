@@ -1,0 +1,45 @@
+/*
+Author : Farhan Mufti HIlmy;
+Type : CSS;
+*/
+body{
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+}
+nav{
+	background-color: #FAFAFA;
+	/*	%----urutan padding----%
+	atasbawah kanankiri
+	atas-kanan-bawahh-kiri
+	*/
+	padding: 10px 20px;
+	background-color: #FAFAFA;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	float: right;
+	padding-right: 30px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 0 10px;
+	text-transform: uppercase;
+	font-family: "Caladea";
+	letter-spacing: 2px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+#navbar-logo{
+	height: 60px;
+	width: 100px;
+}
+

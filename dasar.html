@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Berkenalan dengan HTML</title>
+	<style type="text/css">
+		/*id (yang unik biasa digunakan di satu elemen) dan kelas(biasa digunakan di lebih dari satu elemen)*/
+		#style-status {
+			color:red;
+			padding: 30px;
+			font-size: 30px;
+			font-weight: bold;
+		}		
+		.padding-100px {
+			padding: 150px;
+		}
+		table, th, td {
+				color: white;
+  				border: 1px solid black;
+  				border-collapse:collapse;
+		}
+		input {
+			width: 550px;
+			padding: 30px;
+			color: red;
+		}
+	</style>
+</head>
+<body style="background-color:white">
+	<h1>Judul yang mengawali kehidupan</h1>	
+	<p>Sebuah paragraf yang mengawali kehidupan</p>
+	<button>Tombol untuk memulai hariku</button>
+	<h2>Sebuah Afirmasi</h2>
+	<hr> <!--Sebuah garis kehidupan-->	
+	<!--Ini adalah tag unordered list-->
+	<ul>
+		<ol>Aku bisa</ol>
+		<ol>Aku bisa</ol>
+		<ol>Aku bisa</ol>
+	</ul>
+	<!-- Aku ada disini, namun kamu tidak bisa melihatku disana (browser)-->
+	<ul>
+		<ol>Aku bisa</ol>
+		<ol>Aku bisa</ol>
+		<br><br> <!--Terkadang terdapat jeda jeda kehidupan-->
+		<ol>Aku bisa</ol>
+	</ul>
+<!-- 	1. href link menuju kemana, tex-decoration:none
+		2. title tooltip (muncul saat di hover)
+		3. target buka halaman baru saat di klik -->
+	<p>
+		<a href="https://ugm.ac.id" title="ugm" target="_blank">Mulai</a>
+		<a href="https://ugm.ac.id" title ="ugm" target="_blank">Mulai</a>	
+	</p>
+<!--alt untuk menandakan ketika gambar belum bisa diload-->
+	<img src="img/apel.gif">
+	<img src="https://ugm.ac.id/galleries/crop/13137--730x420px.jpeg" alt="Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana">
+	<h2>Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana</h2>
+	<p>UGM menyelenggarakan Kuliah Perdana Mahasiswa Baru Program Pascasarjana Semester Genap Tahun Akademik 2019/2020, Senin (24/2) di Auditorium Sekolah Pascasarjana UGM</p>
+	<img src="img/Gorilla_grande.jpg" alt="Gambar Apel">
+
+	<p><b>ini tulisan tebal</b> <u>ini tulisan garis bawah</u> <i>ini tulisan miring</i></p>
+
+	<ul>
+		<ol style="color:red">Aku bisa</ol>
+		<ol style="color:cyan">Aku bisa</ol>
+		<ol style="color:purple">Aku bisa</ol>
+		<ol style="color:#073c64">Aku bisa</ol>
+		<ol style="color:#443829">Aku bisa</ol>
+		<ol style="color:green">Aku bisa</ol>
+	</ul>
+<!--Membuat Tabel
+	tr adalah baris
+	th dan tb adalah isinya
+	t	
+-->
+	<table bgcolor="green"> <!--urutan penting dalam atribut-->
+		<tr align="center">
+			<th rowspan="2">No.</th>
+			<th rowspan="2">Nama</th>
+			<th rowspan="2">Jabatan</th>
+			<th colspan="3">Status</th>
+			<th rowspan="2">Aksi</th>
+		</tr>
+		<tr align="center"; id="style-status";>
+			<td>2019</td>
+			<td>2020</td>
+			<td>2021</td>
+		</tr>
+		<tr align="center">			
+			<td >1.</td>
+			<td>Nanang</td> 
+			<td>Ketua</td>
+			<td>Lajang</td>
+			<td>Lajang</td>
+			<td>Lajang</td>
+			<th>
+				<button style="color:white; background-color:purple">Edit</button>
+				<button style="color:white; background-color:purple">Delete</button>
+			</th>
+		</tr>
+		<tr align="center">
+			<td>2.</td>
+			<td>Arif</td>
+			<td>Wakil</td>
+			<td>Lajang</td>
+			<td>Lajang</td>
+			<td>Lajang</td>
+			<th>
+				<button style="color:white; background-color:purple">Edit</button>
+				<button style="color:white; background-color:purple">Delete</button>
+			</th>
+		</tr>
+	<br>
+	</table>
+	<!-- Membuat form -->
+	<form>
+		<input type="text" placeholder="Nama" name="JenengNama">
+		<br>
+		<input type="password" placeholder="Password">
+		<br><br>
+		<input type="submit" placeholder="Daftar">
+	</form>
+</body>
+</html>
