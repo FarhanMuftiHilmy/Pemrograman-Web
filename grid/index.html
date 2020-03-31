@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Pada website yg bagus pasti didefinisikan layout/grid system yaitu container itu sendiri -->
+    <div class="container">
+      
+      <h1>Belajar tentang GRID System di Bootstrap</h1>
+      <div class="row">
+        <div class="col-6 bg-primary">Kolom 1</div>
+        <div class="col-6 bg-warning">Kolom 2</div>
+      </div>
+      <div class="row">
+        <div class="col-4 bg-success">Kolom 1</div>
+        <div class="col-4 bg-danger">Kolom 2</div>
+        <div class="col-4 bg-success">Kolom 3</div>
+      </div>
+      <div class="row">
+        <div class="col-2 bg-success">Kolom 1</div>
+        <div class="col-8 bg-danger">Kolom 2</div>
+        <div class="col-2 bg-success">Kolom 3</div>
+      </div>
+      <br>
+      
+      
+    </div>
+    <hr>
+    <div class="container">
+      <h4>Kolom dalam kolom</h4>
+      <div class="row">
+          <div class="col-4">Ini Kolom 4</div>
+          <div class="col-4">Ini Kolom 4</div>
+          <div class="col-4">Ini Kolom 4</div>
+          <div class="row">
+            <div class="col-2 bg-primary">1</div>
+            <div class="col-6">2</div>
+            <div class="col-4 bg-primary">3</div>
+            <div class="col-4 bg-primary">4</div>
+          </div>
+      </div>
+      <br>
+    </div>
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <!-- Kalau md dkk nya tidak di setting maka tidak responsif(kalau layar dikecilkan yang tadi berjejer jadi bertumpuk), kalo tidak ada no nya juga otomatis akan dibagi dengan lebar -->
+        <div class="col-md-4 bg-primary">Kolom 1</div>
+        <div class="col-md-8 bg-warning">Kolom 2</div>
+      </div>
+      <div class="row">
+        <div class="col">Kolom 1</div>
+        <div class="col">Kolom 2</div>
+        <div class="col">Kolom 3</div>
+        <div class="col">Kolom 4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Kesimpulan</h2>
+      <ol>
+        <li>Hirarkinya .container > .row > .col</li>
+        <li>Di dalam container boleh ada banyak .row</li>
+        <li>Di dalam row boleh ada banyak .col</li>
+        <li>Penggunaan class <code>.col</code> otomatis mendefinisikan kolom yang sama lebar</li>
+        <li>Pengaturan lebar resposifitas layar browser menggunakan xs/sm/md sesuai kebutuhan</li>        
+        <li>Pengaturan custom lebar kolom dengan menambahkan angka 1-12</li>
+      </ol>
+    </div>
+    <hr>
+    <div class="container">
+      <h4>kolom di bagi jadi 2 jika screen hp (sm-6)</h4>
+      <div class="row">
+        <!-- Kalau di hp kolomnya dibagi jadi setengah2 -->
+        
+
+        <div class="col-sm-6 col-md-3 bg-primary">4 Kolom </div>
+        <div class="col-sm-6 col-md-3 bg-warning">4 Kolom</div>
+        <div class="col-sm-6 col-md-3 bg-success">4 Kolom</div>
+        <div class="col-sm-6 col-md-3 bg-secondary">4 Kolom</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="card" style="width: 18rem;">
+          <img src="">
+          <div class="card-body">
+            <h5 class="card-title">Pendidikan</h5>
+            <p class="card-text">ini adalah text</p>
+            <a href="#" class="btn btn-primary">Klik Saya</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
